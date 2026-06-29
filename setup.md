@@ -55,8 +55,11 @@ Description**. This lets us reuse standard Salesforce objects while we focus on 
    Proxima Fusion — met their corp dev lead at a clean-energy summit, rough notes below.
    Munich-based fusion startup, spun out of the Max Planck plasma physics institute, pretty
    young (founded ~2023). Building stellarator-based fusion reactors. Small but seriously
-   technical team, lots of PhDs. Raised a big early round (talked tens of millions, EU
-   deep-tech funds + public money).
+   technical team, lots of PhDs.
+
+   Funding (from my notes — DOUBLE CHECK): I jotted that they closed a Series B around
+   €20m last year. Honestly not sure that's right — might be mixing it up, please verify
+   against public sources.
 
    Why interesting for us: scaling fast and starting to think about where to put future
    engineering + supply chain operations. APAC came up — said they're curious about

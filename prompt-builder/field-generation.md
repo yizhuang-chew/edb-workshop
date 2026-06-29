@@ -32,7 +32,7 @@ receive the generated results.
 2. Click the **Setup** (gear) icon and select **Edit Object**. *Salesforce opens the
    Account object in Setup.*
 
-   ![Edit the Account object](/screenshots/pb-edit-contact-object.png)
+   ![Edit the Account object](/screenshots/edb-edit-object.png)
 
 3. Click the **Fields & Relationships** tab on the left.
 4. Click **New**. *Salesforce navigates to the New Custom Field page.*
@@ -79,7 +79,7 @@ receive the generated results.
 5. Click **Next**. *Salesforce displays the Prompt Builder interface — this is where we'll
    build the prompt up level by level.*
 
-![New Field Generation prompt template](/screenshots/pb-new-prompt-template.png)
+![New Field Generation prompt template](/screenshots/edb-new-prompt.png)
 
 ## 1.1.3 Level 1 — A Simple Instruction
 
@@ -98,12 +98,12 @@ the prompt mechanism working.
 3. Click **Preview**.
 4. Enter the **Account** (e.g. `Proxima Fusion`) in the **Account** search box.
 
-   ![Enter the Account in the preview](/screenshots/pb-contact-input.png)
+   ![Enter the Account in the preview](/screenshots/edb-account-select.png)
 
 5. Click **Preview** again to run the prompt.
 6. Review the **Resolution** and the generated **Response**.
 
-   ![Level 1 preview — generic output](/screenshots/pb-level1-preview.png)
+   ![Level 1 preview — generic output](/screenshots/edb-level1.png)
 
 **What to notice:** the prompt runs and produces a summary — but it's completely
 **generic**. The model is *guessing*, because it knows nothing about Proxima Fusion. It
@@ -136,7 +136,7 @@ We ground it in the **Account record** — including the research notes in the D
 6. Review the **Resolution** — notice the company's real details and research notes are now
    merged into the prompt — and the generated **Response**.
 
-   ![Level 2 preview — grounded output](/screenshots/pb-level2-preview.png)
+   ![Level 2 preview — grounded output](/screenshots/edb-level2.png)
 
 **What to notice:** the summary is now about *Proxima Fusion specifically* — it
 references their real details and the notes you captured. Same simple instruction, but
@@ -153,41 +153,55 @@ shape it into a clean, consistent, structured account profile.
    merge field by hand): **Account > Record Snapshot**.
 
    ```text
-   Analyze this company:
+   You are an investment research analyst at the Singapore Economic Development Board (EDB).
+   Produce a sharp, decision-ready Smart Account Profile for this company:
    {!$RecordSnapshot:Account.snapshot}
 
-   Generate a structured Smart Account Profile using the following standardised headers.
+   Format the output as clearly labelled sections. For each, put the SECTION HEADER on its
+   own line in uppercase, then the SECTION BODY on the lines below it, then a blank line
+   before the next section.
 
-   COMPANY PROFILE: Summarise what the company does, where it's based, size, funding, and
-   stage based on the notes.
+   COMPANY PROFILE
+   What the company does, where it's based, size, stage, and ownership/spin-out origin.
 
-   STRATEGIC INTENT: Capture what the company is looking for (e.g. regional HQ, R&D, talent,
-   supply chain proximity) and any timeline mentioned.
+   FUNDING & INVESTORS
+   Summarise the company's funding history and notable investors. State the latest round
+   (stage and approximate size) and roughly when it was raised.
 
-   INVESTMENT FIT: Assess fit against EDB's priorities (e.g. advanced manufacturing, R&D
-   intensity, jobs created, anchoring activities). State whether they are a Strong, Moderate,
-   or Weak fit, with a one-line reason.
+   RECENT DEVELOPMENTS & PLANS
+   Summarise recent milestones, product or technology progress, partnerships, and the
+   company's forward plans — including any expansion or regional ambitions.
 
-   RISKS & CONCERNS: List the company's stated concerns (cost, IP, talent, timeline) and any
-   competitive risk (other locations or agencies in play).
+   STRATEGIC INTENT
+   What the company is looking for (e.g. regional HQ, R&D, talent, partnerships, supply
+   chain) and any timeline mentioned.
 
-   WEB INSIGHTS: Summarise any relevant public information found in the web search results —
-   for example recent funding, products, leadership, or news. If nothing relevant is found,
-   state 'No public information found'.
+   INVESTMENT FIT
+   Assess fit against EDB's priorities (e.g. deep tech, R&D intensity, advanced
+   manufacturing, anchoring activities, jobs created). State Strong, Moderate, or Weak fit,
+   with a one-line reason.
 
-   RECOMMENDED LEVERS: Based on the company's intent and fit, recommend 2-3 EDB incentives,
-   programmes, or support levers (e.g. grants, talent pipeline, site options) and briefly
-   explain why each fits.
+   RISKS & CONCERNS
+   The company's stated concerns (cost, IP, talent, timeline) and any competitive risk
+   (other locations or agencies in play).
 
-   ACTION ITEMS: List the outstanding next steps / follow-ups for the officer as a bulleted
-   checklist (e.g. confirm timeline, prepare incentive options, line up a site visit, send
-   follow-up).
+   DATA QUALITY FLAGS
+   Compare the notes against the web search results. Flag anything that looks inaccurate or
+   out of date — for example a funding round or stage that doesn't match, an outdated HQ or
+   headcount, or a claim the web contradicts. State both values and which looks correct. If
+   everything aligns, state 'No discrepancies found'.
 
-   Constraint: If a specific header has no relevant information in the notes, state 'No
-   information provided' for that section.
-   Include a break line after each section.
-   Keep the entire response within 2200 characters including break lines and spaces.
-   Do not include confidential figures verbatim; summarise ranges instead.
+   RECOMMENDED LEVERS
+   2-3 EDB incentives, programmes, or support levers (e.g. grants, talent pipeline, research
+   tie-ups, site options) suited to this company, each with a one-line reason.
+
+   NEXT STEPS
+   A short bulleted checklist of follow-ups for the officer.
+
+   Rules:
+   - Base every claim on the notes or the web results; do not invent facts.
+   - If a section has no relevant information, write 'No information provided'.
+   - Keep the whole response under 2500 characters.
    ```
 
 2. Click **Save**.
@@ -196,7 +210,7 @@ shape it into a clean, consistent, structured account profile.
 3. With the **Account** still selected, click **Preview**.
 4. Review the generated **Response**.
 
-   ![Level 3 preview — structured profile](/screenshots/pb-level3-preview.png)
+   ![Level 3 preview — structured profile](/screenshots/edb-level3.png)
 
 **What to notice:** the output is now a **structured profile** with consistent headers —
 Company Profile, Strategic Intent, Investment Fit, Risks, and recommended levers. Same
@@ -213,8 +227,8 @@ news about the company — by adding a **web search action** to the prompt.
    results carefully. On a new line there, type:
 
    ```text
-   And their web presence:
-   WEB CONTEXT: Use the following web search results to corroborate or enrich the profile
+   WEB CONTEXT
+   Use the following web search results to corroborate, enrich, and fact-check the profile
    where relevant:
    ```
 
@@ -231,14 +245,14 @@ news about the company — by adding a **web search action** to the prompt.
    relevant terms (a bare name search often returns no useful results):
 
    ```text
-   {!$Input:Account.Name} company funding investment
+   {!$Input:Account.Name} funding investors latest round news
    ```
 
 5. Set the **Search Provider** to **Openai**.
 6. Click **Apply and Insert**. *The web search action is inserted after your guardrail
    line.*
 
-   ![Apply and Insert the web search action](/screenshots/pb-web-search-apply-insert.png)
+   ![Apply and Insert the web search action](/screenshots/edb-web-search.png)
 
 7. Click **Save**.
 
@@ -247,7 +261,7 @@ news about the company — by adding a **web search action** to the prompt.
 9. Review the updated **Resolution** (it now includes web context) and the generated
    **Response**.
 
-   ![Level 4 preview — web-enriched profile](/screenshots/pb-level4-preview.png)
+   ![Level 4 preview — web-enriched profile](/screenshots/edb-level4.png)
 
 **What to notice:** the profile is now enriched with corroborating detail pulled from the
 web — beyond what your notes alone contained. This is the difference between an *internal*
