@@ -119,6 +119,7 @@ We'll add your point of contact at the company — the person you met.
 3. Scroll down to **Permission Set Assignments** and click **Edit Assignments**.
 4. Assign the following permissions:
    - Einstein Sales Email
+   - Einstein for Service Innovations
    - Agentforce Coworker Admin
    - Agentforce Coworker User
 
