@@ -8,7 +8,7 @@ assistant speaks only from facts, not hallucinations.
 You will build two prompts:
 
 - **1.1 — Smart Account Research:** a Field Generation prompt that turns your research
-  notes — plus the web — into a structured **Smart Account Profile**.
+  notes (plus the web) into a structured **Smart Account Profile**.
 - **1.2 — Investor Outreach Email:** a Sales Email prompt that turns that profile into a
   personalized outreach email to your contact.
 
