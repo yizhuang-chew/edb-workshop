@@ -318,19 +318,23 @@ Now connect the field to the prompt so officers can research an account automati
 
 4. Search for **AI Summary** under Components on the left.
 5. **Drag and drop AI Summary** onto the middle of the page (after the Account Header).
-
-   ![Drag and drop the AI Summary component](/screenshots/pb-ai-summary-drag.png)
-
 6. Check that the **Research Account** prompt is selected as the Prompt Template on the
    right panel.
+
+   ![Add the AI Summary component to the page](/screenshots/edb-edit-page.png)
+
 7. Click **Save**.
-8. Click **Back** to return to the record detail view.
-9. Click the **Research Account** button. *Agentforce executes the prompt and shows the
-   results.*
+8. When prompted to **activate** the page, click **Activate**.
+9. Choose **Assign as App Default**.
+10. Select the **Sales Console** app.
+11. Select **Desktop and Phone**, then click **Next** and **Save**.
+12. Click **Save** again to confirm the page, then click **Back** to return to the record.
+13. Click the **Research Account** button. *Agentforce executes the prompt and shows the
+    results.*
 
-   ![Research Account button on the record](/screenshots/pb-enrich-button.png)
+    ![Generated Smart Account Profile on the record](/screenshots/edb-account-summary.png)
 
-10. Click the **copy** button to copy the results into the field. *The researched profile
+14. Click the **copy** button to copy the results into the field. *The researched profile
     is posted to the **Smart Account Profile** field.*
 
 ::: tip What you learned
