@@ -184,6 +184,8 @@ delegate to it — so the copilot beside the search bar can run full account res
 3. Watch it hand off to your agent, run the **Account Research** subagent and its actions,
    and return the grounded profile inline.
 
+   ![Coworker delegating to the EDB Account Research Agent](/screenshots/a2-coworker-delegation.png)
+
 ::: tip The full picture
 Earlier, Coworker could only answer from what it reached on its own. Now it **delegates**
 to the EDB Account Research Agent you built — so everything you taught the agent (look up,
