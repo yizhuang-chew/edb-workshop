@@ -7,12 +7,10 @@ assistant speaks only from facts, not hallucinations.
 
 You will build two prompts:
 
-- **1.1 — Smart Account Research:** a Field Generation prompt that scans your scattered
-  research notes — and enriches from the web via a **web search action** — to populate a
-  structured **Smart Account Profile** field, capturing the company's profile, investment
-  fit, and recommended next steps.
-- **1.2 — Investor Outreach Email:** a Sales Email prompt that turns the researched account
-  into a warm, personalized outreach email to your contact.
+- **1.1 — Smart Account Research:** a Field Generation prompt that turns your research
+  notes — plus the web — into a structured **Smart Account Profile**.
+- **1.2 — Investor Outreach Email:** a Sales Email prompt that turns that profile into a
+  personalized outreach email to your contact.
 
 ::: tip Prerequisites
 Complete **Exercise 0: Pre-Setup Checklist** first — you need the Proxima Fusion Account
