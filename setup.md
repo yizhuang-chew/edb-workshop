@@ -94,7 +94,7 @@ We'll add your point of contact at the company — the person you met.
    | First Name | Lukas |
    | Last Name | Vogel |
    | Account Name | Proxima Fusion |
-   | Email | {Your own email} |
+   | Email | *(put your own email — so you can see the outreach draft)* |
 
 5. Click **Save**. A new contact called **Lukas Vogel** has been created.
 
