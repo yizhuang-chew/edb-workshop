@@ -149,19 +149,19 @@ correct `@actions.<ActionName>` reference for you. This guarantees the real API 
 
    ![Actions referenced in the subagent canvas](/screenshots/a2-canvas-actions.png)
 
-## 3.2.7 Test in Preview
+## 3.2.7 Commit, Test in Preview & Activate
 
-1. Click **Preview**. If the preview was already open, **refresh** it so it picks up your
+1. Click **Commit Version** and confirm to save your changes.
+2. Click **Preview**. If the preview was already open, **refresh** it so it picks up your
    latest changes.
-2. Enter:
+3. Enter:
    - `Research Proxima Fusion and tell me if they're a fit.`
-3. Press **Enter**.
-4. In **Interaction Details**, watch the agent reason: it transitions to **Account
+4. Press **Enter**.
+5. In **Interaction Details**, watch the agent reason: it transitions to **Account
    Research**, calls **Identify Record by Name** and **Query Records** to fetch the company,
    then calls **Research Account** to generate the structured profile.
 
    ![Agent reasoning in Interaction Details](/screenshots/a2-builder-preview.png)
-5. Click **Commit Version** and confirm to save your changes.
 6. Click **Activate**. Confirm if prompted.
 
 ## 3.2.8 Test in the Console
