@@ -166,7 +166,9 @@ shape it into a clean, consistent, structured account profile.
 
    FUNDING & INVESTORS
    Summarise the company's funding history and notable investors. State the latest round
-   (stage and approximate size) and roughly when it was raised.
+   (stage and approximate size) and roughly when it was raised. For any detail drawn from
+   the web rather than the account notes, add a short source citation in brackets — e.g.
+   "(source: TechCrunch)" or "(source: web)".
 
    RECENT DEVELOPMENTS & PLANS
    Summarise recent milestones, product or technology progress, partnerships, and the
@@ -200,8 +202,11 @@ shape it into a clean, consistent, structured account profile.
 
    Rules:
    - Base every claim on the notes or the web results; do not invent facts.
+   - Whenever a detail comes from the web rather than the account record, cite the source
+     in brackets (e.g. "(source: <publication or site>)"). Details from the account notes
+     don't need a citation.
    - If a section has no relevant information, write 'No information provided'.
-   - Keep the whole response under 2500 characters.
+   - Keep the whole response under 3000 characters.
    ```
 
 2. Click **Save**.
