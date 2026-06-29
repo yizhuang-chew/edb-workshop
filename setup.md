@@ -28,56 +28,54 @@ Description**. This lets us reuse standard Salesforce objects while we focus on 
 ## 3: Create the Company Account
 
 1. Load the Salesforce org.
-2. Open the **App Launcher** (top-left) and select **Sales**. This is the app you'll work
-   in throughout the workshop.
+2. Open the **App Launcher** (top-left) and select **Sales Console**. This is the app
+   you'll work in throughout the workshop.
 
-   ![Open the Sales app](/screenshots/pre-service-console.png)
+   ![Open the Sales Console app](/screenshots/edb-sales-console.png)
 
 3. Select **Accounts** in the tabs.
 4. Click **New** to create a new Account.
-5. Fill in the following details:
+5. When prompted to choose a record type, select **Customer Account** and click **Next**.
+6. Fill in the following details (you can leave Type, Industry, and Website blank — we'll
+   research them):
 
    | Field | Value |
    | --- | --- |
-   | Account Name | Helios Robotics |
-   | Type | Prospect |
-   | Industry | Manufacturing |
-   | Website | *(leave blank — we'll research it)* |
+   | Account Name | Proxima Fusion |
    | Description | *(see the sample research notes below)* |
 
-   ::: tip Use a real company if you like
-   We use the fictional **Helios Robotics** as the example throughout this guide. If you'd
-   prefer, enter a **real company name** — later, the **web search action** will look it up
-   online, which makes the demo come alive. Just substitute your company wherever you see
-   "Helios Robotics."
+   ::: tip Proxima Fusion is a real company
+   We use **Proxima Fusion** — a real Munich-based fusion-energy startup — as the example
+   throughout this guide, so the **web search action** has something real to find. If you'd
+   prefer, enter another **real company name** and substitute it wherever you see "Proxima
+   Fusion."
    :::
-
-   ![Enter the Account details](/screenshots/pre-new-contact.png)
 
    ::: details Sample Research Notes (paste into the Account Description field)
-   Helios Robotics — spoke w/ their VP Corp Dev at the Hannover expo, scribbled notes
-   below. Founded 2016, HQ in Munich. ~320 staff, mostly engineers. Build warehouse
-   automation arms + some agritech pilots. Series C closed last yr (~€80m, led by a couple
-   of EU growth funds). Revenue "north of 50m" he said, growing fast but burning.
+   Proxima Fusion — met their corp dev lead at a clean-energy summit, rough notes below.
+   Munich-based fusion startup, spun out of the Max Planck plasma physics institute, pretty
+   young (founded ~2023). Building stellarator-based fusion reactors. Small but seriously
+   technical team, lots of PhDs. Raised a big early round (talked tens of millions, EU
+   deep-tech funds + public money).
 
-   Why interesting for us: actively scouting an APAC base, said Singapore + Vietnam both on
-   the shortlist. Want a regional HQ + a small R&D team near customers. Talked a lot about
-   needing engineering talent and proximity to electronics supply chain. Sounded keen on
-   gov support / co-investment, asked about grants twice.
+   Why interesting for us: scaling fast and starting to think about where to put future
+   engineering + supply chain operations. APAC came up — said they're curious about
+   Singapore for an R&D / partnerships foothold but very early days. Care a lot about access
+   to deep-tech talent, research partnerships (unis / A*STAR type institutes), and long-term
+   capital.
 
-   Concerns: worried abt cost of ops in SG, also IP protection, and whether they can hire
-   fast enough. No firm timeline but "next 12-18 months" for the APAC decision. Decision
-   makers: the CEO (ex-Siemens) + the VP I met. Competitor we're up against: they're also
-   talking to an agency in another country (didn't say which).
+   Concerns: it's a long-horizon, capital-heavy play; they're wary of anywhere without a
+   real fusion / advanced-materials research base. Also asked about IP protection and
+   whether the ecosystem is deep enough. No timeline — "exploratory."
 
-   Next steps from my side: pull together what we can offer (incentives, talent pipeline,
-   site options), figure out if they fit our advanced manufacturing priorities, and send a
-   proper follow-up before they cool off.
+   Next steps from my side: figure out if they fit our deep-tech / R&D priorities, pull
+   together what we could offer (research tie-ups, talent, grants), and send a proper intro
+   before someone else gets to them.
    :::
 
-6. Click **Save**. A new account called **Helios Robotics** has been created.
+7. Click **Save**. A new account called **Proxima Fusion** has been created.
 
-![Account Description with the sample notes](/screenshots/pre-contact-description.png)
+![Create the Account](/screenshots/edb-new-account.png)
 
 ## 4: Create the Contact
 
@@ -85,19 +83,19 @@ We'll add your point of contact at the company — the person you met.
 
 1. Select **Contacts** in the tabs.
 2. Click **New** to create a new Contact.
-3. Fill in the following details:
+3. When prompted to choose a record type, select **Business Contact** and click **Next**.
+4. Fill in the following details:
 
    | Field | Value |
    | --- | --- |
    | First Name | Lukas |
    | Last Name | Vogel |
-   | Account Name | Helios Robotics |
-   | Title | VP Corporate Development |
+   | Account Name | Proxima Fusion |
    | Email | {Your own email} |
 
-4. Click **Save**. A new contact called **Lukas Vogel** has been created.
+5. Click **Save**. A new contact called **Lukas Vogel** has been created.
 
-![Create the Contact](/screenshots/pre-new-case.png)
+![Create the Contact](/screenshots/edb-business-contact.png)
 
 ## 5: Turn on Einstein
 
@@ -117,18 +115,17 @@ We'll add your point of contact at the company — the person you met.
 2. Select **EPIC, OrgFarm** (your login user).
 3. Scroll down to **Permission Set Assignments** and click **Edit Assignments**.
 4. Assign the following permissions:
-   - Einstein Sales Email User
-   - Einstein for Sales
+   - Einstein Sales Email
    - Agentforce Coworker Admin
    - Agentforce Coworker User
 
-![Permission set assignments](/screenshots/pre-permissions.png)
+![Permission set assignments](/screenshots/edb-permissions.png)
 
 ## 7: Turn on Data 360
 
 1. In the Setup **Quick Find**, type **Data Cloud Setup** and select it.
 
-   ![Data Cloud Setup](/screenshots/pre-data-cloud-setup.png)
+   ![Data Cloud Setup](/screenshots/edb-data-cloud-setup.png)
 
 2. Click **Set Up Data Cloud** (or **Get Started**).
 
@@ -143,6 +140,6 @@ it's used by **Exercise 2: Agentforce Coworker**.
 :::
 
 ::: tip You're ready!
-With your org claimed, the Helios Robotics Account and Lukas Vogel Contact created, and
+With your org claimed, the Proxima Fusion Account and Lukas Vogel Contact created, and
 Einstein enabled, continue to **Exercise 1: Prompt Builder**.
 :::

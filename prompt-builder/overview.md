@@ -15,7 +15,7 @@ You will build two prompts:
   into a warm, personalized outreach email to your contact.
 
 ::: tip Prerequisites
-Complete **Exercise 0: Pre-Setup Checklist** first — you need the Helios Robotics Account
+Complete **Exercise 0: Pre-Setup Checklist** first — you need the Proxima Fusion Account
 and Lukas Vogel Contact, Einstein enabled, and the Einstein permissions assigned.
 :::
 

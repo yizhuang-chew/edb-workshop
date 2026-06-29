@@ -154,7 +154,7 @@ correct `@actions.<ActionName>` reference for you. This guarantees the real API 
 1. Click **Preview**. If the preview was already open, **refresh** it so it picks up your
    latest changes.
 2. Enter:
-   - `Research Helios Robotics and tell me if they're a fit.`
+   - `Research Proxima Fusion and tell me if they're a fit.`
 3. Press **Enter**.
 4. In **Interaction Details**, watch the agent reason: it transitions to **Account
    Research**, calls **Identify Record by Name** and **Query Records** to fetch the company,
@@ -166,10 +166,10 @@ correct `@actions.<ActionName>` reference for you. This guarantees the real API 
 
 ## 3.2.8 Test in the Console
 
-1. Open the **App Launcher** and return to the **Sales** app.
+1. Open the **App Launcher** and return to the **Sales Console** app.
 2. Refresh — the **Agentforce** icon appears in the utility bar.
 3. Click the **Agentforce** icon and ask:
-   - `Research Helios Robotics and assess their investment fit.`
+   - `Research Proxima Fusion and assess their investment fit.`
 
    ![Agent response in the console](/screenshots/a2-console-preview.png)
 

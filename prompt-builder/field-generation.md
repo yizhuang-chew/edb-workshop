@@ -30,7 +30,7 @@ we add grounding and instructions.
 The profile describes the company, so we create the field on the **Account** object to
 receive the generated results.
 
-1. Open the **Account** record for **Helios Robotics**.
+1. Open the **Account** record for **Proxima Fusion**.
 2. Click the **Setup** (gear) icon and select **Edit Object**. *Salesforce opens the
    Account object in Setup.*
 
@@ -98,7 +98,7 @@ the prompt mechanism working.
 
 ::: details Preview & Observe
 3. Click **Preview**.
-4. Enter the **Account** (e.g. `Helios Robotics`) in the **Account** search box.
+4. Enter the **Account** (e.g. `Proxima Fusion`) in the **Account** search box.
 
    ![Enter the Account in the preview](/screenshots/pb-contact-input.png)
 
@@ -108,7 +108,7 @@ the prompt mechanism working.
    ![Level 1 preview — generic output](/screenshots/pb-level1-preview.png)
 
 **What to notice:** the prompt runs and produces a summary — but it's completely
-**generic**. The model is *guessing*, because it knows nothing about Helios Robotics. It
+**generic**. The model is *guessing*, because it knows nothing about Proxima Fusion. It
 could be about any company. This is what an *ungrounded* prompt looks like.
 :::
 
@@ -140,7 +140,7 @@ We ground it in the **Account record** — including the research notes in the D
 
    ![Level 2 preview — grounded output](/screenshots/pb-level2-preview.png)
 
-**What to notice:** the summary is now about *Helios Robotics specifically* — it
+**What to notice:** the summary is now about *Proxima Fusion specifically* — it
 references their real details and the notes you captured. Same simple instruction, but
 **grounding** turned a generic guess into a factual summary.
 :::
@@ -275,7 +275,7 @@ Now connect the field to the prompt so officers can research an account automati
 - The **Research Account** prompt is activated
 :::
 
-1. Go to the **Sales** app and open the **Helios Robotics** Account record detail.
+1. Go to the **Sales Console** app and open the **Proxima Fusion** Account record detail.
 2. Refresh the browser. *You should see the new **Smart Account Profile** field in the
    record detail.*
 3. Click the **Setup** (gear) icon and select **Edit Page**. *The Lightning App Builder

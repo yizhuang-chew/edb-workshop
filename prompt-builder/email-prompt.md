@@ -79,7 +79,7 @@ company**, drawing on what you know about the account.
 We've tested the prompt in Prompt Builder; now let's see how users will use it in their
 daily work.
 
-1. Return to the **Sales** app (via the App Launcher, top-left).
+1. Return to the **Sales Console** app (via the App Launcher, top-left).
 2. Open the **Contact** record for **Lukas Vogel**.
 3. On the **Activity** tab, click **Email**. *Salesforce opens the email composer.*
 4. Click the **Draft with AI** button.

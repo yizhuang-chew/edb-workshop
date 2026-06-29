@@ -46,13 +46,13 @@ feature on.
 
 ## 2.1.2 Use Agentforce Coworker
 
-1. Open the **App Launcher** and navigate to the **Sales** app.
+1. Open the **App Launcher** and navigate to the **Sales Console** app.
 2. Click the **Agentforce Coworker** button located next to the search bar.
 
    ![Agentforce Coworker next to the search bar](/screenshots/cw-search-bar.png)
 
 3. Ask it a question about your data, for example:
-   - `Summarise what we know about Helios Robotics.`
+   - `Summarise what we know about Proxima Fusion.`
    - `Which of my accounts are prospects in manufacturing?`
 
    ![Agentforce Coworker answering inline](/screenshots/cw-review.png)
@@ -70,7 +70,7 @@ deeper, action-driven answers.
 
 Try a few prompts of your own and see how Coworker responds:
 
-- `What's the latest activity on Helios Robotics?`
+- `What's the latest activity on Proxima Fusion?`
 - `Draft a quick note to follow up with Lukas Vogel.`
 - Ask it something specific to *your* accounts or your own follow-up question.
 

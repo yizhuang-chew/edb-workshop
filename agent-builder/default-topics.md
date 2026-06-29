@@ -79,7 +79,7 @@ Find, open **Einstein Setup**, and turn on the **Turn on Einstein** toggle first
 
 ::: warning Account-specific questions come later
 Right now the agent has no subagents or actions to answer questions about an account (like
-*"Research Helios Robotics and assess their fit"*). You'll add those capabilities in
+*"Research Proxima Fusion and assess their fit"*). You'll add those capabilities in
 **Exercise 3.2** — then the agent can reason over real account data.
 :::
 
@@ -132,7 +132,7 @@ In the new Agentforce Builder, you grant agent access by assigning the agent's
 
 ## 3.1.9 Open the Agent in the Console
 
-1. Open the **App Launcher** and return to the **Sales** app.
+1. Open the **App Launcher** and return to the **Sales Console** app.
 2. Refresh the app and check that the **Agentforce** icon now appears in the utility bar.
 3. Click the **Agentforce** icon and select **EDB Account Research Agent**.
 
