@@ -200,6 +200,10 @@ shape it into a clean, consistent, structured account profile.
    NEXT STEPS
    A short bulleted checklist of follow-ups for the officer.
 
+   SOURCES
+   List the web sources you drew on, as a bulleted list (publication or site name, and a
+   link if available). If no web information was used, state 'No web sources used'.
+
    Rules:
    - Base every claim on the notes or the web results; do not invent facts.
    - Whenever a detail comes from the web rather than the account record, cite the source
