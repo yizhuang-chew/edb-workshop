@@ -173,6 +173,23 @@ correct `@actions.<ActionName>` reference for you. This guarantees the real API 
 
    ![Agent response in the console](/screenshots/a2-console-preview.png)
 
+## 3.2.9 Use It Through Agentforce Coworker
+
+Remember **Agentforce Coworker** from Exercise 2? Now that your agent exists, Coworker can
+delegate to it — so the copilot beside the search bar can run full account research.
+
+1. Click the **Agentforce Coworker** button next to the search bar.
+2. Point it explicitly at your agent so it delegates:
+   - `Use the EDB Account Research Agent: research Proxima Fusion and tell me if they're a fit.`
+3. Watch it hand off to your agent, run the **Account Research** subagent and its actions,
+   and return the grounded profile inline.
+
+::: tip The full picture
+Earlier, Coworker could only answer from what it reached on its own. Now it **delegates**
+to the EDB Account Research Agent you built — so everything you taught the agent (look up,
+research, assess fit) is available right beside the search bar, in plain language.
+:::
+
 ::: tip 🎉 Workshop complete
 You created an agent in the new Agentforce Builder, added an **Account Research** subagent,
 gave it standard actions and a prompt-template action, and watched the reasoning engine
