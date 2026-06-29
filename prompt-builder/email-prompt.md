@@ -49,16 +49,17 @@ company**, drawing on what you know about the account.
    ```
 
 8. Now substitute dynamic values for the **\<placeholder\>** keywords. Highlight
-   **\<Recipient Name\>**, delete the text, and click **Insert Resource > Recipient >
-   Full Name**.
-9. Do the same for each remaining placeholder:
+   **\<Recipient Name\>**, delete the text, and click **Insert Resource**, then drill in:
+   **Recipient > Full Name**.
+9. Do the same for each remaining placeholder, drilling through **Recipient** each time
+   (e.g. for the account name, choose **Recipient > Account > Name**):
 
-   | Placeholder | Replacement |
-   | --- | --- |
-   | `<Recipient Name>` | Recipient > Full Name |
-   | `<Account Name>` | Recipient > Account Name |
-   | `<Account Notes>` | Recipient > Account > Description |
-   | `<Sender Name>` | Sender > Full Name |
+   | Placeholder | Insert Resource path | Inserts |
+   | --- | --- | --- |
+   | `<Recipient Name>` | Recipient > Full Name | `{!$Input:Recipient.Name}` |
+   | `<Account Name>` | Recipient > Account > Name | `{!$Input:Recipient.Account.Name}` |
+   | `<Account Notes>` | Recipient > Account > Description | `{!$Input:Recipient.Account.Description}` |
+   | `<Sender Name>` | Sender > Full Name | `{!$Input:Sender.Name}` |
 
 10. Confirm each placeholder has been replaced with the grounded field.
 
