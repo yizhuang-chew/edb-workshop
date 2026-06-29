@@ -125,7 +125,31 @@ We'll add your point of contact at the company — the person you met.
 
 ![Permission set assignments](/screenshots/edb-permissions.png)
 
-## 7: Turn on Data 360
+## 7: Turn on Sales Emails
+
+1. From **Setup**, enter **Einstein for** in the **Quick Find** box, then select **Einstein
+   for Sales**.
+2. Turn on **Sales Emails**. It can take a few minutes before it's ready to use.
+
+![Turn on Sales Emails](/screenshots/edb-sales-emails.png)
+
+## 8: Transition to Lightning Editor
+
+1. Type **Release Updates** in the **Quick Find**.
+2. Search for **Transition to the Lightning Editor for Email Composers in Email-to-Case**.
+
+   ![Transition to the Lightning Editor release update](/screenshots/pre-transition-lightning.png)
+
+3. Click **Get Started**.
+4. Click **Enable Test Run**.
+5. Mark Steps 1 to 3 as **Complete** and click **Done**.
+6. Check both boxes and click **Confirm**.
+
+   ![Lightning Editor test run enabled](/screenshots/pre-lightning-editor-run.png)
+
+7. Refresh your browser.
+
+## 9: Turn on Data 360
 
 1. In the Setup **Quick Find**, type **Data Cloud Setup** and select it.
 
