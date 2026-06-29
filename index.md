@@ -20,6 +20,9 @@ features:
   - title: "Exercise 3: Agent Builder"
     details: Build an autonomous agent that researches an account, assesses investment fit, and enriches the profile — then surfaces through Coworker.
     link: /agent-builder/overview
+  - title: "Resources"
+    details: Continue your Agentblazer journey with demos, docs, and Trailhead.
+    link: /resources
 ---
 
 ## Introduction
