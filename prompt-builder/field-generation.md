@@ -42,7 +42,7 @@ receive the generated results.
    | Field | Value |
    | --- | --- |
    | Field Label | Smart Account Profile |
-   | Length | 1000 |
+   | Length | 5000 |
    | # Visible Lines | 25 |
    | Field Name | *(auto-generated)* |
    | Description | AI-enriched Smart Account Profile |
@@ -158,8 +158,8 @@ shape it into a clean, consistent, structured account profile.
    {!$RecordSnapshot:Account.snapshot}
 
    Format the output as clearly labelled sections. For each, put the SECTION HEADER on its
-   own line in uppercase, then the SECTION BODY on the lines below it, then a blank line
-   before the next section.
+   own line in uppercase, then the SECTION BODY on the lines below it, then a blank line and
+   a section break (a line of dashes, e.g. ---) before the next section.
 
    COMPANY PROFILE
    What the company does, where it's based, size, stage, and ownership/spin-out origin.
@@ -206,7 +206,7 @@ shape it into a clean, consistent, structured account profile.
      in brackets (e.g. "(source: <publication or site>)"). Details from the account notes
      don't need a citation.
    - If a section has no relevant information, write 'No information provided'.
-   - Keep the whole response under 3000 characters.
+   - Keep the whole response under 5000 characters.
    ```
 
 2. Click **Save**.
