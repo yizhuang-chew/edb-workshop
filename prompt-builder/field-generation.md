@@ -226,6 +226,18 @@ Company Profile, Strategic Intent, Investment Fit, Risks, and recommended levers
 grounded data, but **instructions** made it usable and repeatable.
 :::
 
+::: tip Make it your own — experiment!
+This prompt is just a starting point. Try changing it and re-previewing to see how the
+output shifts. For example:
+
+- Add a section, like **COMPETITIVE LANDSCAPE** or **KEY CONTACTS**.
+- Change the tone — ask for a punchy one-line **TL;DR** at the top.
+- Tighten the **INVESTMENT FIT** rubric to your team's real priorities.
+- Ask it to rank the recommended levers by impact.
+
+Tweak, preview, repeat — that's the whole craft of prompt engineering. 🎨
+:::
+
 ## 1.1.6 Level 4 — Add a Web Search Action
 
 Finally, we enrich the profile from the **web** — for example recent funding, products, or
