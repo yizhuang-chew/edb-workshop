@@ -332,7 +332,7 @@ Now connect the field to the prompt so officers can research an account automati
 13. Click the **Research Account** button. *Agentforce executes the prompt and shows the
     results.*
 
-    ![Generated Smart Account Profile on the record](/screenshots/edb-account-summary.png)
+    ![Account Research on the record page](/screenshots/edb-account-research-page.png)
 
 14. Click the **copy** button to copy the results into the field. *The researched profile
     is posted to the **Smart Account Profile** field.*
